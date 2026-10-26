@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pinmend"
+version = "0.1.0"
+description = "The provably smallest set of requirement lines to unpin when a requirements file cannot be resolved"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Joshua Nishanth Tarun A" }]
+keywords = ["dependency resolution", "version solving", "unsatisfiable core", "maxsat", "pip"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Build Tools",
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = ["packaging>=23.0"]
+
+[project.optional-dependencies]
+bench = ["matplotlib>=3.7"]
+test = ["pytest>=7.0"]
+
+[project.scripts]
+pinmend = "pinmend.cli:main"
+
+[tool.setuptools]
+packages = ["pinmend"]
+
+[tool.setuptools.package-data]
+pinmend = ["data/*.json.gz"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

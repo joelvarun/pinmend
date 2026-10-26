@@ -1,0 +1,7 @@
+# botocore still caps urllib3 below 1.27 on this release line.
+boto3==1.26.165
+botocore==1.29.165
+requests==2.31.0
+urllib3==2.2.1
+s3transfer==0.6.2
+python-dateutil==2.8.2

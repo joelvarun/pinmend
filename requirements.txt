@@ -1,0 +1,8 @@
+# Runtime: requirement and version parsing only.
+packaging>=23.0
+
+# Benchmark and figures.
+matplotlib>=3.7
+
+# Tests.
+pytest>=7.0

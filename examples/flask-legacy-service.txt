@@ -1,0 +1,7 @@
+# Flask 1.x service with the template and signing libraries upgraded.
+flask==1.1.4
+jinja2==3.1.2
+werkzeug==2.3.8
+itsdangerous==2.1.2
+click==8.1.3
+markupsafe==2.1.5
